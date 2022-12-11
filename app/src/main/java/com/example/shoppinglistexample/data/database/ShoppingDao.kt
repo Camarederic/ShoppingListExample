@@ -1,4 +1,4 @@
-package com.example.shoppinglistexample
+package com.example.shoppinglistexample.data.database
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -6,6 +6,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.example.shoppinglistexample.data.database.entity.ShoppingItem
 
 @Dao
 interface ShoppingDao {
