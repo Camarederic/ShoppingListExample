@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.shoppinglistexample.R
 import com.example.shoppinglistexample.data.database.ShoppingDatabase
+import com.example.shoppinglistexample.data.database.entity.ShoppingItem
 import com.example.shoppinglistexample.data.repository.ShoppingRepository
 import com.example.shoppinglistexample.other.ShoppingItemAdapter
 import kotlinx.android.synthetic.main.activity_main.*
@@ -35,6 +36,14 @@ class MainActivity : AppCompatActivity() {
             adapter.notifyDataSetChanged()
         })
 
+        fab.setOnClickListener {
+            AddShoppingItemDialog(this,
+                object : AddDialogListener {
+                    override fun onAddButtonClick(item: ShoppingItem) {
+                        viewModel.upsert(item)
+                    }
+                }).show()
+        }
 
     }
 }
