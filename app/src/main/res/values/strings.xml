@@ -5,4 +5,9 @@
     <string name="image_delete">Delete</string>
     <string name="image_minus">Minus</string>
     <string name="image_plus">Plus</string>
+    <string name="name">Name</string>
+    <string name="add_a_new_shopping_item">Add a new shopping item</string>
+    <string name="add">ADD</string>
+    <string name="cancel">CANCEL</string>
+    <string name="amount">Amount</string>
 </resources>
