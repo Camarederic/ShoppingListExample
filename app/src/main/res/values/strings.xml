@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ShoppingListExample</string>
+    <string name="textview">TextView</string>
+    <string name="textview_2">TextView2</string>
+    <string name="image_delete">Delete</string>
+    <string name="image_minus">Minus</string>
+    <string name="image_plus">Plus</string>
 </resources>
